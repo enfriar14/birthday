@@ -36,14 +36,14 @@
     <script>
       // Read URL params
       const params = new URLSearchParams(window.location.search);
-      const name = params.get("name") || "Babyyy";
+      const name = params.get("name") || "Ganda!!";
       let candleCount = parseInt(params.get("candles")) || 4;
       candleCount = Math.min(Math.max(candleCount, 1), 30);
 
       const birthdayText = document.getElementById("birthdayText");
       birthdayText.innerHTML = `
         <div id="mainTitle">Happy Birthday, ${name}!</div>
-        <div id="subTitle">Make a wish and blow candles.</div>
+        <div id="subTitle"></div>
       `;
 
       const cake = document.getElementById("cake");
